@@ -76,7 +76,8 @@ ul, li {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  height: 380px;
+  height: 3.8rem;
+  position: absolute;
 
   .logo {
     display: block;
@@ -109,8 +110,15 @@ ul, li {
     text-align: center;
     margin-top: 5px;
   }
+
 }
 
+.github {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1rem;
+}
 
 /*--------------------------------
 　グローバルナビ
