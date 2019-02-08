@@ -55,11 +55,11 @@ ul, li {
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 #contents {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 /*--------------------------------
@@ -76,8 +76,7 @@ ul, li {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  height: 3.8rem;
-  position: absolute;
+  height: 11rem;
 
   .logo {
     display: block;
@@ -111,13 +110,6 @@ ul, li {
     margin-top: 5px;
   }
 
-}
-
-.github {
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 1rem;
 }
 
 /*--------------------------------
@@ -174,6 +166,66 @@ ul, li {
   }
 }
 
+/*--------------------------------
+  Github
+---------------------------------*/
+
+/*--------------------------------
+　button
+---------------------------------*/
+
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    /* transition-property: all */
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      /* カーソルを移動させたら大きくなる */
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5px 1rem rgba(0,0,0, 0.2);
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #777;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &--green {
+    background-color: #55c57a;
+    color: #fff;
+
+    &::after {
+      background-color: #55c57a;
+    }
+  }
+}
 
 /*--------------------------------
 　Section
