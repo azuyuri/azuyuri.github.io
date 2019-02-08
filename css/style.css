@@ -36,7 +36,7 @@ img, video, object {
   height: auto;
   border: none;
   vertical-align: bottom;
-  display: block;
+  display: inline-block;
 }
 
 ul, li {
@@ -279,7 +279,7 @@ ul, li {
 }
 
 /*--------------------------------
- SKILL
+  SKILL
 ---------------------------------*/
 
 #skill .card-wrapper {
@@ -378,7 +378,7 @@ ul, li {
 }
 
 /*--------------------------------
- CONTACT
+  CONTACT
 ---------------------------------*/
 
 #contact .contact-list {
@@ -418,7 +418,7 @@ ul, li {
 }
 
 /*--------------------------------
- Footer
+  Footer
 ---------------------------------*/
 
 #footer {
@@ -591,3 +591,4 @@ ul, li {
     padding: 0 10px;
     margin-bottom: 5px;
   }
+}
