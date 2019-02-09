@@ -68,28 +68,28 @@ ul, li {
   height: 11rem; }
   #header .logo {
     display: block; }
-  #header .logo-name {
-    display: block;
-    font-family: 'Yesteryear', cursive;
-    display: block;
-    position: relative;
-    top: -8px;
-    left: -60px;
-    font-size: 36px;
-    color: #d59fea;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg); }
-  #header .logo-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 94px;
-    color: #f39ac7;
-    line-height: 1;
-    letter-spacing: -2px; }
-  #header .logo-desc {
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 5px; }
+    #header .logo-name {
+      display: block;
+      font-family: 'Yesteryear', cursive;
+      display: block;
+      position: relative;
+      top: -8px;
+      left: -60px;
+      font-size: 36px;
+      color: #d59fea;
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
+    #header .logo-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 94px;
+      color: #f39ac7;
+      line-height: 1;
+      letter-spacing: -2px; }
+    #header .logo-desc {
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 5px; }
 
 /*--------------------------------
 　グローバルナビ
@@ -117,9 +117,9 @@ ul, li {
     #gnav li:last-child {
       margin-right: 0;
       padding: 0 20px; }
-  #gnav li a {
-    color: #333;
-    letter-spacing: -0.01em; }
+    #gnav li a {
+      color: #333;
+      letter-spacing: -0.01em; }
   #gnav.fixed {
     position: fixed;
     top: 0;
@@ -146,8 +146,8 @@ ul, li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.75em 1.75em;
-  border-radius: 5rem;
+  padding: 0.45em 0.75em;
+  border-radius: 3rem;
   display: inline-block;
   color: #fff;
   /* グラデーション */
@@ -156,12 +156,12 @@ ul, li {
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: -10px;
+    bottom: -1rem;
     left: 5%;
     height: 110%;
     width: 90%;
     opacity: 0.8;
-    border-radius: 50px;
+    border-radius: 5rem;
     /* グラデーション */
     background: linear-gradient(to right, rgba(221, 149, 252, 0.87), rgba(255, 123, 163, 0.87));
     /* シャドウ効果のために要素をぼかす */
@@ -172,27 +172,30 @@ ul, li {
     filter: blur(6px);
     /* アニメーションを加えてより美しく */
     -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
+    transition: all 0.2s ease-out; }
   .btn:hover {
     transform: translateY(-3px); }
-    .btn:hover:active::after {
+    .btn:hover:active, .btn:hover:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
       -webkit-filter: blur(10px);
       -moz-filter: blur(10px);
       -o-filter: blur(10px);
       -ms-filter: blur(10px);
-      filter: blur(10px);
-      transform: translateY(1px); }
-    .btn:hover::after {
-      /* ぼかし効果の変更 */
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-      /* スタイルのプロパティも少し変更 */
-      width: 100%;
-      bottom: -5px;
-      left: 0; }
+      filter: blur(10px); }
+  .btn::after {
+    /* ぼかし効果の変更 */
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    /* スタイルのプロパティも少し変更 */
+    width: 100%;
+    bottom: -5px;
+    left: 0; }
 
 /*--------------------------------
 　Section
@@ -228,14 +231,13 @@ ul, li {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.two-column-image {
-  width: 33%; }
-
-.two-column-image img {
-  margin: 0 auto; }
-
 .two-column-desc {
   width: 62%; }
+
+.two-column-image {
+  width: 33%; }
+  .two-column-image img {
+    margin: 0 auto; }
 
 /*--------------------------------
 　Latestworks
