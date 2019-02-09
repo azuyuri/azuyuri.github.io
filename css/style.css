@@ -132,46 +132,67 @@ ul, li {
     transform: translate3d(0, 0, 0); }
 
 /*--------------------------------
-  Github
----------------------------------*/
-/*--------------------------------
 　button
 ---------------------------------*/
-.btn, .btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  /* transition-property: all */
+.btn {
+  font-size: 1.6rem;
   position: relative;
-  font-size: 1.6rem; }
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    /* カーソルを移動させたら大きくなる */
-    opacity: 0; }
-
-.btn:active, .btn:focus {
   outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2); }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-  .btn--white::after {
-    background-color: #fff; }
-
-.btn--green {
-  background-color: #55c57a;
-  color: #fff; }
-  .btn--green::after {
-    background-color: #55c57a; }
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.75em 1.75em;
+  border-radius: 5rem;
+  display: inline-block;
+  color: #fff;
+  /* グラデーション */
+  background: linear-gradient(to right, rgba(213, 159, 234, 0.8), rgba(243, 154, 199, 0.8)); }
+  .btn::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    left: 5%;
+    height: 110%;
+    width: 90%;
+    opacity: 0.8;
+    border-radius: 50px;
+    /* グラデーション */
+    background: linear-gradient(to right, rgba(221, 149, 252, 0.87), rgba(255, 123, 163, 0.87));
+    /* シャドウ効果のために要素をぼかす */
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+    /* アニメーションを加えてより美しく */
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .btn:hover {
+    transform: translateY(-3px); }
+    .btn:hover:active::after {
+      -webkit-filter: blur(10px);
+      -moz-filter: blur(10px);
+      -o-filter: blur(10px);
+      -ms-filter: blur(10px);
+      filter: blur(10px);
+      transform: translateY(1px); }
+    .btn:hover::after {
+      /* ぼかし効果の変更 */
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+      filter: blur(4px);
+      /* スタイルのプロパティも少し変更 */
+      width: 100%;
+      bottom: -5px;
+      left: 0; }
 
 /*--------------------------------
 　Section
