@@ -174,14 +174,24 @@ ul, li {
 ---------------------------------*/
 
 .pig__inner {
-  height: 36.8rem;
-  max-width: 30.7rem;
-  // width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  
   margin: 0 auto;
-  padding: 17rem 1rem;
+  height: 36.8rem;
+  max-width: 30.75rem;
+  width: 100%;
+  padding: 17rem 0;
   // background-color: blue;
   background-image: url(../img/pig.png);
   filter: brightness(95%);
+  // position: absolute;
 }
 
 
