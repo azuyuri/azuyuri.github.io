@@ -10,7 +10,7 @@
 body {
   font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #333;
-  font-size: 15px;
+  font-size: 1.4rem;
   line-height: 1.8;
   letter-spacing: 0.8px;
   word-break: break-all; }
@@ -44,13 +44,10 @@ ul, li {
   background-color: #f3f3f3; }
 
 .inner {
-  max-width: 1320px;
+  max-width: 132rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem; }
-
-#contents {
-  padding: 10rem 0; }
 
 /*--------------------------------
 　ヘッダー
@@ -134,9 +131,18 @@ ul, li {
 /*--------------------------------
 　button
 ---------------------------------*/
+.pig__inner {
+  height: 36.8rem;
+  max-width: 30.7rem;
+  margin: 0 auto;
+  padding: 17rem 1rem;
+  background-image: url(../img/pig.png);
+  filter: brightness(95%); }
+
 .btn {
   font-size: 1.6rem;
   position: relative;
+  top: 50;
   outline: none;
   border: none;
   -webkit-appearance: none;
@@ -146,7 +152,7 @@ ul, li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.45em 0.75em;
+  padding: 0.65em 0.75em;
   border-radius: 3rem;
   display: inline-block;
   color: #fff;
@@ -201,13 +207,13 @@ ul, li {
 　Section
 ---------------------------------*/
 .section .inner {
-  padding: 80px 10px; }
+  padding: 8rem 1rem; }
 
 .section .section-title {
   font-family: 'Oswald', sans-serif;
   letter-spacing: -0.01em;
   display: inline-block;
-  font-size: 56px;
+  font-size: 4.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #f39ac7; }
@@ -460,9 +466,9 @@ ul, li {
   #gnav li a:hover {
     opacity: 1; }
   #contents {
-    padding: 40px 0; }
+    padding: 0.5rem 0; }
   .section .inner {
-    padding: 30px 15px; }
+    padding: 3rem 1.5rem; }
   .section .section-title-block {
     margin-bottom: 10px; }
   .section .section-title {
