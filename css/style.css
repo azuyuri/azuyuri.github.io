@@ -66,7 +66,6 @@ ul, li {
   #header .logo {
     display: block; }
     #header .logo-name {
-      display: block;
       font-family: 'Yesteryear', cursive;
       display: block;
       position: relative;
@@ -141,11 +140,10 @@ ul, li {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  height: 36.8rem;
-  max-width: 30.75rem;
-  width: 100%;
-  padding: 17rem 0;
-  background-image: url(../img/pig.png);
+  width: 100vw;
+  height: 100vh;
+  padding: 22.5rem 0;
+  background: url(../img/pig.png) no-repeat center;
   filter: brightness(95%); }
 
 .btn {
