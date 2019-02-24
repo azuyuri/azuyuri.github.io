@@ -136,6 +136,8 @@ li {
     width: 60px; }
   #skill .rate5:after {
     width: 75px; }
+  #form {
+    width: 100%; }
   #contact .contact-list ul {
     width: 100%; }
   #contact .contact-list li {
@@ -304,7 +306,15 @@ li {
     /* fallback for old browsers */
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+    -moz-osx-font-smoothing: grayscale;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .form-page {
     width: 36rem;
     margin: auto; }
