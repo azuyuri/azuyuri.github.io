@@ -1,0 +1,95 @@
+/*--------------------------------
+　button
+---------------------------------*/
+.pig__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  padding: 22.5rem 0;
+  background: url(../img/pig.png) no-repeat center;
+  filter: brightness(95%);
+}
+
+.btn {
+  font-size: 1.6rem;
+  position: relative;
+  top: 50;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.65em 0.75em;
+  border-radius: 3rem;
+  display: inline-block;
+  color: #fff;
+  /* グラデーション */
+  background: linear-gradient(to right, rgba(213, 159, 234, 0.8), rgba(243, 154, 199, 0.8));
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -1rem;
+  left: 5%;
+  height: 110%;
+  width: 90%;
+  opacity: 0.8;
+  border-radius: 5rem;
+  /* グラデーション */
+  background: linear-gradient(to right, rgba(221, 149, 252, 0.87), rgba(255, 123, 163, 0.87));
+  /* シャドウ効果のために要素をぼかす */
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  /* アニメーションを加えてより美しく */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:hover:active,
+.btn:hover:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.btn::after {
+  /* ぼかし効果の変更 */
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  /* スタイルのプロパティも少し変更 */
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
