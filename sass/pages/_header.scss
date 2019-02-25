@@ -11,8 +11,10 @@
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  /* 縦 */
+  flex-direction: column;
   height: 11rem;
-
+  
   .logo {
     display: block;
 
@@ -21,8 +23,8 @@
     display: block;
     position: relative;
     top: 0;
-    left: -60px;
-    font-size: 36px;
+    left: -4vw;
+    font-size: 2rem;
     color: #d59fea;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
@@ -30,7 +32,7 @@
 
     &-title {
       font-family: 'Oswald', sans-serif;
-      font-size: 94px;
+      font-size: 5rem;
       color: #f39ac7;
       line-height: 1;
       letter-spacing: -2px;

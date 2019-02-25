@@ -1,6 +1,6 @@
 /*media Queries 767
 ----------------------------------------------------*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   body {
     font-size: 13px;
     line-height: 1.7;
@@ -37,32 +37,37 @@
     padding: 0.5rem 0;
   }
 
-  .section .inner {
-    padding: 3rem 1.5rem;
+  .section {
+    .inner {
+      padding: 3rem 1.5rem;
+    }
+    .section-title {
+      font-size: 36px;
+      &-block {
+        margin-bottom: 10px;
+      }
+    }
   }
 
-  .section .section-title-block {
-    margin-bottom: 10px;
+  #latestworks .two-column {
+    &-wrapper {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    &-image {
+      width: 90%;
+      margin: 0 auto 20px;
+    }
+    &-desc {
+      width: 100%;
+      // font-size: 1.7rem;
+    }
   }
 
-  .section .section-title {
-    font-size: 36px;
-  }
+  #latestworks .two-column
 
-  #latestworks .two-column-wrapper {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  #latestworks .two-column-image {
-    width: 90%;
-    margin: 0 auto 20px;
-  }
-
-  #latestworks .two-column-desc {
-    width: 100%;
-  }
+  #latestworks .two-column
 
   #works .card {
     width: 48%;

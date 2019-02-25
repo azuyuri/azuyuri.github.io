@@ -1,10 +1,25 @@
 /*--------------------------------
 　About
 ---------------------------------*/
-#about .two-column-image {
-  width: 33%;
-}
+#about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
 
-#about .two-column-desc {
-  width: 62%;
+  .two-column {
+    &-image {
+      width: 48%;
+    }
+    &-desc {
+      width: 48%;
+    }
+  }
 }
